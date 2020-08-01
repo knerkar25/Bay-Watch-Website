@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Text+Me+One');
+@import url('https://fonts.googleapis.com/css?family=Chau+Philomene+One');
+body{
+	margin: 0;
+	padding: 0;
+	background: url("../images/bg1.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.overlay{
+	position: absolute;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+header{
+	display: table;
+	width: 100%;
+}
+.logo{
+	float: left;
+	margin: 20px 60px;
+}	
+.logo img{
+	display: block;
+	width: 190px;
+	height: auto;	
+}
+ul.menu{
+	list-style: none;
+	margin: 40px 60px 0 0; 
+	padding: 0;
+	float: right;	
+}
+	
+.menu li{
+	display: inline-block;
+}	
+
+.menu li a{
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 20px;
+	border-bottom: solid rgba(255,255,255,0) 1px;
+	border-radius: 50%;	
+	transition: all .5s ease;
+	/* font-family: 'Shadows Into Light', cursive; */
+	font-family: 'Acme', sans-serif;
+	font-weight: lighter;
+}		
+	
+.menu li:hover a{
+	border-bottom: solid rgba(255,255,255,1) 1px;
+	border-radius: 50%;	
+}
+.maincontent{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.btns{
+	position: absolute;
+	top: 22%;
+	left: 65%;
+}
+.btn1{
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+	padding: 20px 30px;
+	font-size: 20px;
+    /* margin-left: 120px; */
+}
+.btn1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn2{
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+	padding: 20px 30px;
+	font-size: 20px;
+}
+.btn2:hover{
+    background-color: #fff;
+    color: #000;
+}
+h1{
+    color: #fff;
+	font-size: 50px;
+	font-family: 'Sedgwick Ave', cursive;
+	font-weight: lighter;
+}
+span{
+	animation: animate 1s infinite;
+}
+@keyframes animate{
+	0%{color: #f00;}
+	25%{color: #ff0;}
+	50%{color: #fff;}
+	75%{color: #0ff;}
+	100%{color: #00f;}
+}
+
+.watches{
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;	
+	font-family: 'Chau Philomene One', sans-serif;
+}	
+
+.watches li{
+	display: inline-block;
+	margin: 0 25px;
+}
+.tag p{
+	color:fff;
+	font-family: 'Chau Philomene One', sans-serif;
+}
+.watches img{	
+	width: 120px;
+	height: auto;
+	transform: scale(1);
+	transition: all .5s ease;
+}
+.seiko li{
+	margin:  0;
+}
+.seiko img{
+	width: 170px;
+}
+.seiko p{
+	color:fff;
+	font-family: 'Chau Philomene One', sans-serif;
+}
+.s {
+    color:fff;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	font-family: 'Satisfy', cursive;
+	border-radius: 10px;
+}
+.watches img:hover{
+	transform: scale(1.25);
+}
+.tissot img{
+	width:140px;
+}
+.tissot p{
+	color:fff;
+	font-family: 'Chau Philomene One', sans-serif;
+}
+.t{
+	color:fff;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	font-family: 'Satisfy', cursive;
+	border-radius: 10px;
+}
+.hublot img{
+	width:150px;
+}
+.hublot p{
+	color: fff;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+.hub{
+	color:fff;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	font-family: 'Satisfy', cursive;
+	border-radius: 10px;
+}
+.ferrari img{
+	width: 150px;
+}
+.ferrari p{
+	color: fff;
+	font-family: 'Chau Philomene One', sans-serif;
+}
+.f {
+    color:#fff;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	font-family: 'Satisfy', cursive;
+	border-radius: 10px;
+}
+.f:hover,.s:hover,.t:hover,.hub:hover{
+	background-color: #fff;
+	color: #000;
+}
+.contacts{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.contacts img{
+	height: 100px;
+	width: auto;
+	margin: 10px;
+	transform: scale(1);
+	transition: 0.5s ease;
+}
+.contacts img:hover{
+	transform: scale(1.3);
+}
+.logIn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-40%);
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1);
+	padding: 20px 50px;
+	text-align: center;
+	color: rgba(255,255,255,1);
+}
+input{
+	width: 300px;
+	height: 50px;
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,1);
+	margin: 10px 0px;
+	border-radius: 10px;
+	text-align: center;
+	color: rgba(255,255,255,1);
+}
+footer{
+	position: absolute;
+	top: 100%;
+	background: #000;
+	width: 100%;
+	height: 125px;
+}
+.left{
+	float: left;
+}
+.left img{
+	height: 100px;
+	width: auto;
+}
+.right{
+	float: right;
+	width: 50%;
+	color: rgba(255,255,255,1);
+}
+.right ul{
+	list-style: none;
+	text-align: center;
+}

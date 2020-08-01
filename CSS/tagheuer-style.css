@@ -1,0 +1,87 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url("../images/bg1.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.overlay{
+	position: absolute;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+header{
+	display: table;
+	width: 100%;
+}
+.logo{
+	float: left;
+	margin: 20px 60px;
+}	
+.logo img{
+	display: block;
+	width: 170px;
+	height: auto;	
+}
+ul.menu{
+	list-style: none;
+	margin: 40px 60px 0 0; 
+	padding: 0;
+	float: right;	
+}
+.menu li{
+	display: inline-block;
+}	
+.menu li a{
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 20px;
+	border-bottom: solid rgba(255,255,255,0) 1px;
+	border-radius: 50%;	
+	transition: all .5s ease;
+}		
+.menu li:hover a{
+	border-bottom: solid rgba(255,255,255,1) 1px;
+	border-radius: 50%;	
+}
+.watches{
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: solid red 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;	
+}	
+
+.watches li{
+	display: inline-block;
+	margin: 0 25px;
+}
+
+.watches img{	
+	width: 120px;
+	height: auto;
+	transform: scale(1);
+	transition: all .5s ease;
+}
+
+.watches img:hover{
+	transform: scale(1.3);
+}

@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>BayWatch</title>
+	<link rel="stylesheet" type="text/css" href="css/watches-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="overlay">
+    <header>
+        <nav>
+            <div>
+                <div class="logo">
+                    <a href="">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                 
+                 <div>
+                 <ul class="menu">
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="discover.html">The Collection</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+                 </div>
+            </div>
+        </nav>
+    </header>
+    </div>
+    <div class="logIn">
+		<div class="log-in">
+			<form action="index.html" onsubmit="return validation()">
+				<h2>Sign Up</h2>
+				<input type="text" name="first" placeholder="First Name" id="firstname" autocomplete="off"><br>
+				<input type="text" name="email" placeholder="Email-Address" id="emailaddress" autocomplete="off"><br>
+				<input type="password" name="" placeholder="Password" id="password"><br>
+				<input type="password" name="" placeholder="Confirm Password" id="confirmpassword"><br>
+				<input id="submitButton" type="Submit" href="index.html" value="Submit"><br>
+				<a href="login.html">Already have an account?</a>
+			</form>			
+		</div>
+    </div>
+    <script type="text/javascript">
+		function validation()
+		{
+			var firstName=document.getElementById('firstname').value;
+			var emailAddress=document.getElementById('emailaddress').value;
+			var passWord=document.getElementById('password').value;
+			var confirmPassword=document.getElementById('confirmpassword').value;
+			var flag=0;
+
+			if(firstName=="")
+			{
+				alert("Firstname Cannot be Blank!!!");
+				flag=1;
+				return false;
+			}
+			if(!isNaN(firstName))
+			{
+				alert("Firstname Cannot be an Integer!!!");
+				flag=1;
+				return false;
+			}
+
+			if(emailAddress.indexOf('@')<=0)
+			{
+				alert("Invalid Email Address!!!");
+			}
+			else if(emailAddress.charAt(emailAddress.length-4)!='.' && emailAddress.charAt(emailAddress.length-3)!='.')
+			{
+				alert("Invalid Email Address!!!");
+			}
+
+			if(passWord=="")
+			{
+				alert("Password Cannot be Blank!!!");
+				flag=1;
+				return false;
+			}
+			else if(passWord.length<=5)
+			{
+				alert("Password should have atleast 6 Characters!!!");
+				flag=1;
+				return false;
+			}
+
+			if(confirmPassword!=passWord)
+			{
+				alert('Passwords do not Match!!!');
+				flag=1;
+				return false;
+			}
+		}
+	</script>
+	<footer>
+    <div class="left">
+        <img src="Images/logo.png">
+    </div>
+    <div class="right">
+        <ul>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/baywatchcompany/"> baywatchcompany</a></li>
+            <li><i class="fab fa-google-plus-g"></i><a href="mailto:baywatchcompany@gmail.com"> baywatchcompany@gmail.com</a></li>
+            <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/bayhis.watchco.7"> baywatchcompany</a></li>                
+            <li><i class="fab fa-twitter"></i><a href="https://twitter.com/baywatc25309593">baywatchcompany</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Navrachana University,Vasna-Bhayli rd,Vadodara,390011.</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>    

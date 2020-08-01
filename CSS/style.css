@@ -1,0 +1,97 @@
+body{
+	margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+	background: url("../images/bg1.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.logo{
+	float: left;
+	margin: 20px 60px;
+}
+.logo img{
+    display: block;
+	width: 190px;
+	height: auto;	
+}
+.menu{
+    float:right;
+    line-height: 160px;
+    margin-right: 20px;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;  
+    /*font-weight: 100;*/
+    /*padding: 10px 10px;*/
+}
+.menu ul li a:hover{
+    /*border-radius: 10px;
+    border: 1px solid #fff;*/
+    border-bottom: 2px solid #fff;
+}
+.maincontent{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.btn1{
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 120px;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn2{
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.btn2:hover{
+    background-color: #fff;
+    color: #000;
+}
+h1{
+    color: #fff;
+    font-size: 210%;
+
+}
+
+
